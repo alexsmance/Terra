@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography - Terra</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@2/lib/p5.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="./assets/terra.css" rel="stylesheet" />
+  <style>
+    
+    .layout-typography > * {
+      margin-bottom: 1rem;
+    }
+
+    .layout-typography > code {
+      margin-bottom: .5rem;
+    }
+
+    .layout-typography-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: .1rem;
+      border: .1rem solid black;
+      background: black;
+    }
+
+    .layout-typography-grid > div {
+      position: relative;
+      display: flex;
+      justify-content: center;      
+      background: var(--yellow);
+      font-size: 3rem;
+      padding: 1rem;
+      border: .1rem solid black;
+    }
+
+    .layout-typography-grid > div > p {
+      position: absolute;
+      right: .25rem;
+      bottom: .25rem;
+    }
+    
+  </style>
+</head>
+<body>
+  <main>
+     <section class="margin-vertical">
+      <h2 class="subtitle margin-bottom">Typography</h2>
+      <div class="layout-typography">
+        <code>title</code>
+        <h1 class="title">Quick Brown Fox Jumps Over The Lazy Dog</h1>
+
+        <code>subtitle</code>
+        <h2 class="subtitle">Quick Brown Fox Jumps Over The Lazy Dog</h2>
+
+        <code>header</code>
+        <h3 class="header">Quick Brown Fox Jumps Over The Lazy Dog</h3>
+
+        <code>subheader</code>
+        <h4 class="subheader">Quick Brown Fox Jumps Over The Lazy Dog</h4>
+
+        <code>heading</code>
+        <h5 class="heading">Quick Brown Fox Jumps Over The Lazy Dog</h5>
+
+        <code>subheading</code>
+        <h6 class="subheading">Quick Brown Fox Jumps Over The Lazy Dog</h6>
+
+        <code>paragraph</code>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium impedit recusandae soluta nisi
+          inventore quasi dolore eos quibusdam natus, esse necessitatibus facilis neque distinctio quae vero eius eveniet.
+          Accusantium?</p>
+
+        <code>note</code>
+        <p class="note">note</p>
+
+        <code>blockquote</code>
+        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae velit expedita magnam at, modi,
+          labore quibusdam animi odio a recusandae possimus. Aperiam commodi provident cumque tempore ut minus. Natus,
+          molestias.</blockquote>
+      </div>
+
+      <div class="layout-typography-grid">
+        <div>
+          Aa
+          <p class="note">Alpha</p>
+        </div>
+        <div>
+          Bb
+          <p class="note">Bravo</p>
+        </div>
+        <div>
+          Cc
+          <p class="note">Charlie</p>
+        </div>
+        <div>
+          Dd
+          <p class="note">Delta</p>
+        </div>
+        <div>
+          Ee
+          <p class="note">Echo</p>
+        </div>
+        <div>
+          Ff
+          <p class="note">Foxtrot</p>
+        </div>
+        <div>
+          Gg
+          <p class="note">Golf</p>
+        </div>
+        <div>
+          Hh
+          <p class="note">Hotel</p>
+        </div>
+        <div>
+          Ii
+          <p class="note">India</p>
+        </div>
+        <div>
+          Jj
+          <p class="note">Juliet</p>
+        </div>
+        <div>
+          Kk
+          <p class="note">Kilo</p>
+        </div>
+        <div>
+          Ii
+          <p class="note">India</p>
+        </div>
+        <div>
+          Ll
+          <p class="note">Lima</p>
+        </div>
+        <div>
+          Mm
+          <p class="note">Mike</p>
+        </div>
+        <div>
+          Nn
+          <p class="note">November</p>
+        </div>
+        <div>
+          Oo
+          <p class="note">Oscar</p>
+        </div>
+        <div>
+          Pp
+          <p class="note">Papa</p>
+        </div>
+        <div>
+          Qq
+          <p class="note">Quebec</p>
+        </div>
+        <div>
+          Rr
+          <p class="note">Romeo</p>
+        </div>
+        <div>
+          Ss
+          <p class="note">Sierra</p>
+        </div>
+        <div>
+          Tt
+          <p class="note">Tango</p>
+        </div>
+        <div>
+          Uu
+          <p class="note">Uniform</p>
+        </div>
+        <div>
+          Vv
+          <p class="note">Victor</p>
+        </div>
+        <div>
+          Ww
+          <p class="note">Whiskey</p>
+        </div>
+        <div>
+          Xx
+          <p class="note">X-Ray</p>
+        </div>
+        <div>
+          Yy
+          <p class="note">Yankee</p>
+        </div>
+        <div>
+          Zz
+          <p class="note">Zulu</p>
+        </div>
+      </div>
+
+      <div class="layout-typography-grid margin-vertical">
+        <div>
+          0
+          <p class="note">Zero</p>
+        </div>
+        <div>
+          1
+          <p class="note">One</p>
+        </div>
+        <div>
+          2
+          <p class="note">Two</p>
+        </div>
+        <div>
+          3
+          <p class="note">Three</p>
+        </div>
+        <div>
+          4
+          <p class="note">Four</p>
+        </div>
+        <div>
+          5
+          <p class="note">Five</p>
+        </div>
+        <div>
+          6
+          <p class="note">Six</p>
+        </div>
+        <div>
+          7
+          <p class="note">Seven</p>
+        </div>
+        <div>
+          8
+          <p class="note">Eight</p>
+        </div>
+        <div>
+          9
+          <p class="note">Nine</p>
+        </div>
+      </div>
+
+      <div class="layout-typography-grid margin-vertical">
+        <div>
+          ~
+          <p class="note">Tilde</p>
+        </div>
+        <div>
+          `
+          <p class="note">Backslash</p>
+        </div>
+        <div>
+          !
+          <p class="note">Exclamation</p>
+        </div>
+        <div>
+          @
+          <p class="note">At</p>
+        </div>
+        <div>
+          #
+          <p class="note">Hash</p>
+        </div>
+        <div>
+          $
+          <p class="note">Dollar</p>
+        </div>
+        <div>
+          %
+          <p class="note">Percent</p>
+        </div>
+        <div>
+          ^
+          <p class="note">Caret</p>
+        </div>
+        <div>
+          &
+          <p class="note">Seven</p>
+        </div>
+        <div>
+          *
+          <p class="note">Eight</p>
+        </div>
+        <div>
+          ()
+          <p class="note">Parenthesis</p>
+        </div>
+        <div>
+          {}
+          <p class="note">Curly</p>
+        </div>
+        <div>
+          <>
+          <p class="note">Angle</p>
+        </div>
+        <div>
+          []
+          <p class="note">Square</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

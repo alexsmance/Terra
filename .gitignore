@@ -1,0 +1,8 @@
+# vscode
+.vscode/
+
+# assets
+./assets/*.ttf
+./assets/*.woff
+./assets/*.woff2
+./Fjord.png

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal - Terra</title>
+  <link href="./assets/terra.css" rel="stylesheet" />
+  <link href="./assets/terminal.css" rel="stylesheet" />
+  <style></style>
+</head>
+<body class="terminal">
+<section>
+  <header class="margin-bottom">
+    <h1 class="title margin-bottom">Terminal</h1>
+    <p>Terminal is used for a monospace font and to emulate a CLI.</p>
+  </header>
+  <section class="margin-bottom">
+    <h3 class="subtitle margin-bottom">Prompt</h3>
+    <div class="prompt">user@terra:~$
+      <input type="text" id="prompt" />
+    </div>
+    <div class="command">ls -la</div>
+    <div class="output">
+      <p>total 12<br/>
+        drwxr-xr-x  3 user user 4096 Jan 1 12:00 .<br/>
+        drwxr-xr-x 10 user user 4096 Jan 1 12:00 ..<br/>
+        -rw-r--r--  1 user user   0 Jan 1 12:00 file.txt<br/>
+        -rw-r--r--  1 user user   0 Jan 1 12:00 another_file.txt<br/>
+        drwxr-xr-x  2 user user 4096 Jan 1 12:00 folder<br/>
+      </p>
+    </div>
+  </section>
+  <section class="margin-bottom">
+    <h3 class="subtitle margin-bottom">Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+          <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 3, Cell 1</td>
+          <td>Row 3, Cell 2</td>
+          <td>Row 3, Cell 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="margin-bottom">
+    <h2 class="subtitle margin-bottom">List</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+  </section>
+  <section>
+    <h2 class="subtitle margin-bottom">Form</h2>
+    <form class="margin-bottom">
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+    
+        <label for="name">Email</label>
+        <input type="email" id="email" />
+
+        <label for="name">Password</label>
+        <input type="password" id="password" />
+
+        <button type="button">Submit</button>
+      </fieldset>
+    </form>
+  </section>
+  <section class="margin-bottom">
+    <h2 class="subtitle margin-bottom">Progress</h2>
+
+    <label for="progress">Loading</label>
+    <progress id="file" max="100" value="70">70%</progress>
+  </section>
+</body>
+</html>

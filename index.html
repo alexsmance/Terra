@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Terra</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@2/lib/p5.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="./assets/terra.css" rel="stylesheet" />
+  <style>
+   
+    /* .container {
+      display: grid;
+      grid-template-columns: repeat(1fr, 8);
+      gap: 10px;
+    } */
+
+    .layout-typography-grid > div {
+      position: relative;
+      display: flex;
+      justify-content: center;      
+      background: var(--yellow);
+      padding: 3rem;
+      font-size: 3rem;
+    }
+
+    .layout-typography-grid > div > p {
+      position: absolute;
+      right: .5rem;
+      bottom: .5rem;
+    }
+
+    .palette {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .5rem;
+    }
+
+    @media(min-width: 600px) {
+      .palette {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    @media(min-width: 1200px) {
+      .palette {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .fjord-bg {
+      background-image: url("/assets/Fjord.png");
+    }
+
+    .layout-materials {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .layout-materials > * {
+      height: 256px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header class="margin-vertical">
+    <h1 class="title margin-bottom">Terra</h1>
+
+    <div class="">
+      <button type="button" id="toggle-mode-button">
+        <span class="material-symbols-outlined">dark_mode</span>
+      </button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./buttons.html">Buttons</a>
+    <a href="./content.html">Content</a>
+    <a href="./forms.html">Forms</a>
+    <a href="./palette.html">Palette</a>    
+    <a href="./terminal.html">Terminal</a>
+    <a href="./typography.html">Typography</a>
+    <a href="./table.html">Table</a>
+  </nav>
+
+  <script>
+    // const isDarkMode = window.watchMedia('(prefers-color-scheme: dark)').matches;
+
+    const toggleModeButton = document.querySelector("#toggle-mode-button");
+
+    toggleModeButton.addEventListener('click', (event) => {
+      const metaTag = document.querySelector("meta[name=color-scheme]");
+      const newValue = "light dark" ? "dark light" : "light dark";
+      metaTag.setAttribute("content", newValue);
+    });
+  </script>
+</body>
+</html>
