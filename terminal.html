@@ -6,15 +6,30 @@
   <title>Terminal - Terra</title>
   <link href="./assets/terra.css" rel="stylesheet" />
   <link href="./assets/terminal.css" rel="stylesheet" />
-  <style></style>
+  <link href="./assets/docs.css" rel="stylesheet" />
 </head>
 <body class="terminal">
-<section>
-  <header class="margin-bottom">
-    <h1 class="title margin-bottom">Terminal</h1>
-    <p>Terminal is used for a monospace font and to emulate a CLI.</p>
+  <header class="container">
+    <h1 class="title margin-bottom">Terra</h1>
+
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./buttons.html">Buttons</a>
+      <a href="./content.html">Content</a>
+      <a href="./data.html">Data</a>
+      <a href="./forms.html">Forms</a>
+      <a href="./palette.html">Palette</a>    
+      <a href="./terminal.html">Terminal</a>
+      <a href="./typography.html">Typography</a>
+    </nav>
   </header>
-  <section class="margin-bottom">
+  <section class="container margin-bottom">
+    <h1 class="title margin-bottom">Terminal</h1>
+    <p>Terminal is used for a monospace font and to emulate a CLI. 
+       You must import terminal.css after terra.css as it is a seperate file</p>
+    <p></p>
+  </section>
+  <section class="container margin-bottom">
     <h3 class="subtitle margin-bottom">Prompt</h3>
     <div class="prompt">user@terra:~$
       <input type="text" id="prompt" />
@@ -30,7 +45,7 @@
       </p>
     </div>
   </section>
-  <section class="margin-bottom">
+  <section class="container margin-bottom">
     <h3 class="subtitle margin-bottom">Table</h3>
     <table>
       <thead>
@@ -59,7 +74,7 @@
       </tbody>
     </table>
   </section>
-  <section class="margin-bottom">
+  <section class="container margin-bottom">
     <h2 class="subtitle margin-bottom">List</h2>
     <ul>
       <li>Item 1</li>
@@ -68,7 +83,7 @@
       <li>Item 4</li>
     </ul>
   </section>
-  <section>
+  <section class="container margin-bottom">
     <h2 class="subtitle margin-bottom">Form</h2>
     <form class="margin-bottom">
       <fieldset>
@@ -85,7 +100,7 @@
       </fieldset>
     </form>
   </section>
-  <section class="margin-bottom">
+  <section class="container margin-bottom">
     <h2 class="subtitle margin-bottom">Progress</h2>
 
     <label for="progress">Loading</label>

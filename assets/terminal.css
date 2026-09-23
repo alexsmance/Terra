@@ -2,6 +2,30 @@
   --text-color: rgb(94, 205, 50);  
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #333333;
+
+    /* --red: #ff0000ff;
+    --green:  #a1ff0aff;
+    --blue:   #0aefffff;
+    --yellow: #ffd300ff;
+    --pink:   #be0affff;
+    --purple: #580affff;
+    --orange: #ff8700ff; */
+    
+    --paper-background: #666666;
+  }
+
+  * {
+    --text-color: rgb(94, 205, 50);
+  }
+}
+
+a {
+  color: var(--text-color);
+}
+
 body.terminal {
   background: #333333;
   color: var(--text-color);
@@ -18,8 +42,8 @@ table, tbody td {
   border: 1px solid var(--text-color);
 }
 
-table tbody td:hover {
-  
+table thead tr:hover {
+  color: var(--text-color);
 }
 
 ul {
@@ -58,5 +82,9 @@ button {
 
 button:hover {
   background: var(--text-color);
-  color: black;
+  color: #333333;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--text-color);
 }

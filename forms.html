@@ -10,138 +10,166 @@
   <link href="./assets/docs.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="margin-vertical">
+  <header class="container">
     <h1 class="title margin-bottom">Terra</h1>
 
-    <div>
-      <button type="button" id="toggle-mode-button">
-        <span class="material-symbols-outlined">dark_mode</span>
-      </button>
-    </div>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./buttons.html">Buttons</a>
+      <a href="./content.html">Content</a>
+      <a href="./data.html">Data</a>
+      <a href="./forms.html">Forms</a>
+      <a href="./palette.html">Palette</a>    
+      <a href="./terminal.html">Terminal</a>
+      <a href="./typography.html">Typography</a>
+    </nav>
+    
   </header>
 
-  <section class="margin-vertical">
-    <h2 class="subtitle margin-bottom">Forms</h2>
-    <p>Forms are a key component of user interaction. The following form elements are styled to provide a consistent look and feel across the application.</p>  
-  </section>
-
-  <section>
-    <div class="form-group">
-      <fieldset class="margin-bottom">
-        <label for="name">Name</label>
-        <input type="text" 
-               id="name"
-               class="padding-half shadow-low"
-               placeholder="Enter your name." />
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="email">Email</label>
-        <input type="email" 
-               id="email"
-               class="padding-half shadow-low"
-               placeholder="name@domain.com" />
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="password">Password</label>
-        <input type="password" 
-               id="password"
-               class="padding-half shadow-low"
-               placeholder="Enter your password" />
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="telephone">Telephone</label>
-        <input type="tel" 
-               id="telephone"
-               class="padding-half shadow-low"
-               placeholder="Enter your phone number" />
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="url">Url</label>
-        <input type="url" 
-               id="url"
-               class="padding-half shadow-low"
-               placeholder="Enter your url" />
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="message">Text Area</label>
-        <textarea id="message"
-                  class="padding-half shadow-low"
-                  placeholder="Enter your message"
-                  rows="4"></textarea>
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="select">Select</label>
-        <select id="select" class="padding-half shadow-low">
-          <option value="">Select an option</option>
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </select>
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="checkbox">Checkbox</label>
-        <input type="checkbox" id="checkbox" />
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <legend for="radio" class="margin-bottom">Radio</legend>
-
-        <div class="radio margin-bottom">
-          <input type="radio" id="radio1" name="radio-group" value="apple"/>
-          <label for="radio1">Apple</label>
-        </div>
-
-        <div class="radio margin-bottom">
-          <input type="radio" id="radio2" name="radio-group" value="banana"/>
-          <label for="radio2">Banana</label>
-        </div>
-
-        <div class="radio margin-bottom">
-          <input type="radio" id="radio3" name="radio-group" value="cherry"/>
-          <label for="radio3">Cherry</label>
-        </div>
-      </fieldset>
-      
-      <fieldset class="margin-bottom">  
-        <label for="slider">Slider</label>
-        <input type="range" id="slider" min="0" max="100" value="50"/>
-      </fieldset> 
-
-      <fieldset class="margin-bottom">
-        <label for="progress">Progress</label>
-        <progress class="padding-half" id="progress" value="50" max="100"></progress>
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="color">Color</label>
-        <input type="color" id="color" value="#ff0000"/>
-      </fieldset>
-
-      <div class="swatch margin-bottom">
-        <div class="swatch-item">
-          
-        </div>
+  <main class="container">
+    <section class="margin-vertical">
+      <h2 class="subtitle margin-bottom">Forms</h2>
+      <p>Forms are a key component of user interaction. The following form elements are styled to provide a consistent look and feel across the application.</p>  
+    </section>
+  
+    <section class="margin-bottom">
+      <div class="form-group">
+        <fieldset class="margin-bottom">
+          <label for="name">Name</label>
+          <input type="text" 
+                 id="name"
+                 class="padding-half shadow-low"
+                 placeholder="Enter your name." />
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="email">Email</label>
+          <input type="email"
+                 id="email"
+                 class="padding-half shadow-low"
+                 placeholder="name@domain.com" />
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="password">Password</label>
+          <input type="password" 
+                 id="password"
+                 class="padding-half shadow-low"
+                 placeholder="Enter your password" />
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="telephone">Telephone</label>
+          <input type="tel"
+                 id="telephone"
+                 class="padding-half shadow-low"
+                 placeholder="Enter your phone number" />
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="url">Url</label>
+          <input type="url" 
+                 id="url"
+                 class="padding-half shadow-low"
+                 placeholder="Enter your url" />
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="message">Text Area</label>
+          <textarea id="message"
+                    class="padding-half shadow-low"
+                    placeholder="Enter your message"
+                    rows="4"></textarea>
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="select">Select</label>
+          <select id="select" class="padding-half shadow-low">
+            <option value="">Select an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="checkbox">Checkbox</label>
+          <input type="checkbox" id="checkbox" />
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <legend for="radio" class="margin-bottom">Radio</legend>
+  
+          <div class="radio margin-bottom">
+            <input type="radio" id="radio1" name="radio-group" value="apple"/>
+            <label for="radio1">Apple</label>
+          </div>
+  
+          <div class="radio margin-bottom">
+            <input type="radio" id="radio2" name="radio-group" value="banana"/>
+            <label for="radio2">Banana</label>
+          </div>
+  
+          <div class="radio margin-bottom">
+            <input type="radio" id="radio3" name="radio-group" value="cherry"/>
+            <label for="radio3">Cherry</label>
+          </div>
+        </fieldset>
+        
+        <fieldset class="margin-bottom">  
+          <label for="slider">Slider</label>
+          <input type="range" id="slider" min="0" max="100" value="50"/>
+        </fieldset> 
+  
+        <fieldset class="margin-bottom">
+          <label for="progress">Progress</label>
+          <progress class="padding-half" id="progress" max="100" value="50" >50%</progress>
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="color">Color</label>
+          <input type="color" id="color" value="#ff0000"/>
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="date">Date</label>
+          <input type="date" id="date" class="padding-half shadow-low"/>
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="time">Time</label>
+          <input type="time" id="time" class="padding-half shadow-low"/>
+        </fieldset>
+  
+        <button type="submit" class="primary" class="subheading">
+          <span class=""></span>Submit
+        </button>
       </div>
-
-      <fieldset class="margin-bottom">
-        <label for="date">Date</label>
-        <input type="date" id="date" class="padding-half shadow-low"/>
-      </fieldset>
-
-      <fieldset class="margin-bottom">
-        <label for="time">Time</label>
-        <input type="time" id="time" class="padding-half shadow-low"/>
-      </fieldset>
-
-      <button type="submit" class="primary size-medium">Submit</button>
-    </div>
-  </section>  
+    </section>
+    <section>
+      <h2 class="subtitle margin-bottom">Inset Form</h2>    
+      <form class="inset">
+        <fieldset class="margin-bottom">
+          <label for="email">Email</label>
+          <input type="email" 
+                 id="email"
+                 class="padding-half shadow-low"
+                 placeholder="name@domain.com" />
+        </fieldset>
+  
+        <fieldset class="margin-bottom">
+          <label for="password">Password</label>
+          <input type="password" 
+                 id="password"
+                 class="padding-half shadow-low"
+                 placeholder="Enter your password" />
+        </fieldset>
+  
+        <button type="submit" class="primary" class="subheading">
+          <span class=""></span>Submit
+        </button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>

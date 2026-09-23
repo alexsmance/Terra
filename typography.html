@@ -7,7 +7,13 @@
   <script src="https://cdn.jsdelivr.net/npm/p5@2/lib/p5.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="./assets/terra.css" rel="stylesheet" />
+  <link href="./assets/docs.css" rel="stylesheet" />
   <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     
     .layout-typography > * {
       margin-bottom: 1rem;
@@ -21,15 +27,15 @@
       display: grid;
       grid-template-columns: repeat(8, 1fr);
       gap: .1rem;
-      border: .1rem solid black;
-      background: black;
+      /* border: .1rem solid black; */
+      /* background: black; */
     }
 
     .layout-typography-grid > div {
       position: relative;
       display: flex;
       justify-content: center;      
-      background: var(--yellow);
+      /* background: var(--yellow); */
       font-size: 3rem;
       padding: 1rem;
       border: .1rem solid black;
@@ -40,11 +46,25 @@
       right: .25rem;
       bottom: .25rem;
     }
-    
   </style>
 </head>
 <body>
-  <main>
+  <header class="container">
+    <h1 class="title margin-bottom">Terra</h1>
+
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./buttons.html">Buttons</a>
+      <a href="./content.html">Content</a>
+      <a href="./data.html">Data</a>
+      <a href="./forms.html">Forms</a>
+      <a href="./palette.html">Palette</a>    
+      <a href="./terminal.html">Terminal</a>
+      <a href="./typography.html">Typography</a>
+    </nav>
+  </header>
+
+  <main class="container">
      <section class="margin-vertical">
       <h2 class="subtitle margin-bottom">Typography</h2>
       <div class="layout-typography">

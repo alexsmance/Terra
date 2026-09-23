@@ -26,14 +26,14 @@
 
     .layout-materials {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
 
     .layout-materials > * {
       height: 256px;
     }
-    
+
     /* .paper {
       background: var(--white);
       border-radius: var(--border-radius);
@@ -46,122 +46,122 @@
   </style>
 </head>
 
-<body>  
-    <header class="margin-vertical">
-      <h1 class="title margin-bottom">Terra</h1>
+<body>
+  <header class="container">
+    <h1 class="title margin-bottom">Terra</h1>
 
-      <div>
-        <button type="button" id="toggle-mode-button">
-          <span class="material-symbols-outlined">dark_mode</span>
-        </button>
-      </div>
-    </header>
     <nav>
       <a href="./index.html">Home</a>
       <a href="./buttons.html">Buttons</a>
       <a href="./content.html">Content</a>
+      <a href="./data.html">Data</a>
       <a href="./forms.html">Forms</a>
-      <a href="./palette.html">Palette</a>
+      <a href="./palette.html">Palette</a>    
       <a href="./terminal.html">Terminal</a>
       <a href="./typography.html">Typography</a>
-      <a href="./table.html">Table</a>
     </nav>
-    <main>
-      <section class="margin-vertical">
-        <h1 class="title">Palette</h1>
-      </section>
-    </main>
-    <section class="palette margin-vertical">
-      <div class="paper">
-        <div class="red" style="width: 100%; height: 100px;"></div>
-        <div class="padding">
-          <div class="margin-bottom">
-            <p class="header">Red</p>
-            <p class="heading">Rose</p>
-          </div>
-          <div>
-            <p class="text-bold">#ffe7e5</p>
-            <p>rgb(255, 231, 229)</p>
-            <p>hsl(4, 100%, 95%)</p>
-          </div>
-        </div>
-      </div>
-      <div class="paper">
-        <div class="green" style="width: 100%; height: 100px;"></div>
-        <div class="padding">
-          <div class="margin-bottom">
-            <p class="header">Green</p>
-            <p class="heading">Jasmine</p>
-          </div>
-          <p class="text-bold">#e5ffe9</p>
-          <p>rgb(229, 255, 233)</p>
-          <p>hsl(129, 100%, 95%)</p>
-        </div>
-      </div>
-      <div class="paper">
-        <div class="blue" style="width: 100%; height: 100px;"></div>
-        <div class="padding">
-          <div class="margin-bottom">
-            <p class="header">Blue</p>
-            <p class="heading">Azure</p>
-          </div>
-          <p class="text-bold">#bde7ef</p>
-          <p>rgb(189, 231, 239)</p>
-          <p>hsl(190, 62%, 84%)</p>
-        </div>
-      </div>
-      <div class="paper">
-        <div class="yellow" style="width: 100%; height: 100px;"></div>
-        <div class="padding">
-          <div class="margin-bottom">
-            <p class="header">Yellow</p>
-            <p class="heading">Dafodill</p>
-          </div>
-          <p class="text-bold">#ffffe3;</p>
-          <p>rgb(255, 255, 229)</p>
-          <p>hsl(60, 100%, 95%)</p>
-        </div>
-      </div>
-      <div class="paper">
-        <div class="purple" style="width: 100%; height: 100px;"></div>
-        <div class="padding">
-          <div class="margin-bottom">
-            <p class="header">Purple</p>
-            <p class="heading">Lavendar</p>
-          </div>
-          <p class="text-bold">#e8e5ff</p>
-          <p>rgb(232, 229, 255)</p>
-          <p>hsl(246, 100%, 95%)</p>
-        </div>
-      </div>
-      <div class="paper">
-        <div class="orange" style="width: 100%; height: 100px;"></div>
-        <div class="padding">
-          <div class="margin-bottom">
-            <p class="header">Orange</p>
-            <p class="heading">Marigold</p>
-          </div>
-          <p class="text-bold">#fff3e5</p>
-          <p>rgb(255, 243, 229)</p>
-          <p>hsl(32, 100%, 95%)</p>
-        </div>
-      </div>
-      <div class="paper">
-        <div class="pink" style="width: 100%; height: 100px;"></div>
-        <div class="padding">
-          <div class="margin-bottom">
-            <p class="header">Pink</p>
-            <p class="heading">Lilac</p>
-          </div>
-          <p class="text-bold">#f2e5ff</p>
-          <p>rgb(242, 229, 255)</p>
-          <p>hsl(270, 100%, 95%)</p>
-        </div>
-      </div>
+
+  </header>
+
+  <main class="container">
+    <section class="margin-vertical">
+      <h1 class="title">Palette</h1>
     </section>
+  </main>
+
+  <section class="palette container margin-bottom">
+    <div class="paper">
+      <div class="red" style="width: 100%; height: 100px;"></div>
+      <div class="padding">
+        <div class="margin-bottom">
+          <p class="header">Red</p>
+          <p class="heading">Rose</p>
+        </div>
+        <div>
+          <p class="text-bold">#ffe7e5</p>
+          <p>rgb(255, 231, 229)</p>
+          <p>hsl(4, 100%, 95%)</p>
+        </div>
+      </div>
+    </div>
+    <div class="paper">
+      <div class="green" style="width: 100%; height: 100px;"></div>
+      <div class="padding">
+        <div class="margin-bottom">
+          <p class="header">Green</p>
+          <p class="heading">Jasmine</p>
+        </div>
+        <p class="text-bold">#e5ffe9</p>
+        <p>rgb(229, 255, 233)</p>
+        <p>hsl(129, 100%, 95%)</p>
+      </div>
+    </div>
+    <div class="paper">
+      <div class="blue" style="width: 100%; height: 100px;"></div>
+      <div class="padding">
+        <div class="margin-bottom">
+          <p class="header">Blue</p>
+          <p class="heading">Azure</p>
+        </div>
+        <p class="text-bold">#bde7ef</p>
+        <p>rgb(189, 231, 239)</p>
+        <p>hsl(190, 62%, 84%)</p>
+      </div>
+    </div>
+    <div class="paper">
+      <div class="yellow" style="width: 100%; height: 100px;"></div>
+      <div class="padding">
+        <div class="margin-bottom">
+          <p class="header">Yellow</p>
+          <p class="heading">Dafodill</p>
+        </div>
+        <p class="text-bold">#ffffe3;</p>
+        <p>rgb(255, 255, 229)</p>
+        <p>hsl(60, 100%, 95%)</p>
+      </div>
+    </div>
+    <div class="paper">
+      <div class="purple" style="width: 100%; height: 100px;"></div>
+      <div class="padding">
+        <div class="margin-bottom">
+          <p class="header">Purple</p>
+          <p class="heading">Lavendar</p>
+        </div>
+        <p class="text-bold">#e8e5ff</p>
+        <p>rgb(232, 229, 255)</p>
+        <p>hsl(246, 100%, 95%)</p>
+      </div>
+    </div>
+    <div class="paper">
+      <div class="orange" style="width: 100%; height: 100px;"></div>
+      <div class="padding">
+        <div class="margin-bottom">
+          <p class="header">Orange</p>
+          <p class="heading">Marigold</p>
+        </div>
+        <p class="text-bold">#fff3e5</p>
+        <p>rgb(255, 243, 229)</p>
+        <p>hsl(32, 100%, 95%)</p>
+      </div>
+    </div>
+    <div class="paper">
+      <div class="pink" style="width: 100%; height: 100px;"></div>
+      <div class="padding">
+        <div class="margin-bottom">
+          <p class="header">Pink</p>
+          <p class="heading">Lilac</p>
+        </div>
+        <p class="text-bold">#f2e5ff</p>
+        <p>rgb(242, 229, 255)</p>
+        <p>hsl(270, 100%, 95%)</p>
+      </div>
+    </div>
   </section>
-  <section class="margin-vertical">
+  <section class="container">
     <h2 class="subtitle margin-bottom">Materials</h2>
+    <p>Materials are used to emulate natural interfaces that reflect nature. 
+       Paper can be used to isolate context, content or stand out over backgrounds to show clear intent for the user.<br/>
+       Glass can be used to show content behind and provide the same intent that paper does with a more natural blend to the content behind.</p>
     <div class="layout-materials fjord-bg padding">
       <div class="paper padding">
         <h3 class="header">Paper</h3>
@@ -169,13 +169,13 @@
           pariatur aliquid, temporibus provident ut itaque distinctio possimus delectus a fuga, nisi illum ea magnam
           laborum?</p>
       </div>
-      <div class="glass-thin padding">
+      <div class="glass-thin padding shadow-low">
         <h3 class="header">Glass-Thin</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem, quia, error cumque eaque suscipit
           optio atque repellendus architecto voluptas quisquam. Ad eum culpa, nobis iste harum voluptas voluptatibus
           voluptates!</p>
       </div>
-      <div class="glass padding">
+      <div class="glass padding shadow-low">
         <h3 class="header">Glass</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem, quia, error cumque eaque suscipit
           optio atque repellendus architecto voluptas quisquam. Ad eum culpa, nobis iste harum voluptas voluptatibus
@@ -189,10 +189,5 @@
       </div>
     </div>
   </section>
-  <section class="margin-vertical">
-    <h2>Swatch</h2>
-    
-  </section>
 </body>
-
 </html>
