@@ -4,9 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terminal - Terra</title>
+  <link href="./favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="./assets/terra.css" rel="stylesheet" />
   <link href="./assets/terminal.css" rel="stylesheet" />
   <link href="./assets/docs.css" rel="stylesheet" />
+  <style>
+    header > nav > a,
+    header > nav > a:visited {
+      color: rgb(94, 205, 50);
+    }
+
+    .palette-grid-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .palette-grid-item {
+      height: 4rem;
+    }
+  </style>
 </head>
 <body class="terminal">
   <header class="container">
@@ -25,9 +42,13 @@
   </header>
   <section class="container margin-bottom">
     <h1 class="title margin-bottom">Terminal</h1>
-    <p>Terminal is used for a monospace font and to emulate a CLI. 
-       You must import terminal.css after terra.css as it is a seperate file</p>
-    <p></p>
+    <p class="margin-bottom">Terminal is used for a monospace font and to emulate a CLI. 
+       You must import terminal.css after terra.css as it is a seperate file
+    </p>
+
+    <p class="margin-bottom">
+      Terminal has a limited scope of elements compared to the terra base class so it is recommended to use the examples below.
+    </p>
   </section>
   <section class="container margin-bottom">
     <h3 class="subtitle margin-bottom">Prompt</h3>
@@ -90,10 +111,10 @@
         <label for="name">Name</label>
         <input type="text" id="name" />
     
-        <label for="name">Email</label>
+        <label for="email">Email</label>
         <input type="email" id="email" />
 
-        <label for="name">Password</label>
+        <label for="password">Password</label>
         <input type="password" id="password" />
 
         <button type="button">Submit</button>
@@ -105,6 +126,18 @@
 
     <label for="progress">Loading</label>
     <progress id="file" max="100" value="70">70%</progress>
+  </section>
+  <section class="container margin-bottom">
+    <h2 class="subtitle margin-bottom">Palette</h2>
+    <div class="palette-grid-layout">
+      <div class="palette-grid-item red"></div>
+      <div class="palette-grid-item green"></div>
+      <div class="palette-grid-item blue"></div>
+      <div class="palette-grid-item yellow"></div>
+      <div class="palette-grid-item purple"></div>
+      <div class="palette-grid-item orange"></div>
+      <div class="palette-grid-item pink"></div>
+    </div>
   </section>
 </body>
 </html>
