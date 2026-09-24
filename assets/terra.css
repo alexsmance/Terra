@@ -161,7 +161,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 0.2rem;
+  border-bottom: 0.25rem;
 }
 
 a:visited {
@@ -183,6 +183,10 @@ a:visited {
 
 .link {
   border-bottom: .25rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 /* Palette */
@@ -250,6 +254,7 @@ button.primary {
 button.fullwidth {
   width: 100%;
 }
+
 /* button.primary:hover {
   background: var(--primary-color);
   box-shadow: var(--depth-low);
@@ -309,7 +314,7 @@ img, video {
 .glass,
 .glass-thin,
 .glass-thick {
-  color: black;
+  color: #333333;
 }
 
 /* Forms */
@@ -322,7 +327,7 @@ form.inset {
   background: #eeeeee;
   border-radius: var(--border-radius);
   padding: var(--padding);
-  color: #333;
+  color: #333333;
 }
 
 fieldset {
@@ -418,13 +423,13 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   background: var(--primary-color);
   cursor: ew-resize;
-  box-shadow: 0 0 2px 0 #333;
+  box-shadow: 0 0 2px 0 #333333;
   transition: background .3s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
   input[type="range"] {
-    background: #666;
+    background: #666666;
   }
 }
 
@@ -439,7 +444,7 @@ input[type="colour"] {
   appearance: none;
   width: 2rem;
   height: 2rem;
-  /* border-radius: .5rem; */
+  border-radius: .5rem;
   cursor: pointer;
   display: grid;
   place-content: center;
@@ -461,11 +466,11 @@ progress {
   width: 100%;
   height: .5rem;
   border-radius: .5rem;
-  background-color: #666;
+  background-color: #666666;
 }
 
 progress::-webkit-progress-bar {
-  background-color: #666;
+  background-color: #666666;
 }
 
 progress::-webkit-progress-value {
@@ -605,7 +610,7 @@ ul {
 }
 
 ul.border {
-  border: 1px solid #333;
+  border: 1px solid #333333;
 }
 
 ul.list {
@@ -645,7 +650,7 @@ ul.list.inset {
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 1px solid #333333;
   border-radius: var(--border-radius);
 }
 
@@ -680,11 +685,11 @@ tr td {
 th, td {
   padding: var(--padding-half);
   text-align: left;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #333333;
 }
 
 td {
-  border: 1px solid black;
+  border: 1px solid #333333;
 }
 
 table.paper, table.glass {
@@ -711,7 +716,7 @@ table.paper tbody tr:last-child td:last-child {
 
 table tr:hover,
 table.glass tr {
-  color: black
+  color: #333333;
 }
 
 /* Loader */
@@ -719,7 +724,7 @@ table.glass tr {
   width: 40px;
   aspect-ratio: 1;
   border-radius: 50%;
-  color: #000;
+  color: #333333;
   background-color: var(--purple);
   /* border: 2px solid; */
   box-sizing: border-box;
@@ -749,7 +754,7 @@ table.glass tr {
   /* border: 2px solid; */
   box-shadow: var(--depth-low);
   box-sizing: content-box;
-  transform-origin: 50% calc(100% - 4px);
+  transform-origin: 50% calc(100% - 0.25rem);
   animation: inherit;
 }
 

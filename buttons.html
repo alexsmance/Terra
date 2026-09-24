@@ -17,7 +17,6 @@
 <body>
   <header class="container">
     <h1 class="title margin-bottom">Terra</h1>
-
     <nav>
       <a href="./index.html">Home</a>
       <a href="./buttons.html">Buttons</a>
@@ -30,13 +29,15 @@
     </nav>
   </header>
 
-  <section class="container">
+  <section class="container margin-bottom">
     <h1 class="header margin-bottom">Buttons</h1>
-    <p></p>
+    <p class="margin-bottom">Buttons by default are borderless and on hover have a shade to fit the minimal nature of Terra. These can be altered through a custom theme or colour/utility classes.</p>
+    <p>The following demonstrates common icons that are used. Terra uses Material Icons by default to bring familiarity to the user for visual indication. However custom icon libraries can be used to replace it easily as
+      Material Icons are imported before Terra.
+    </p>
   </section>
 
-  <section class="container">
-    <h3 class="subheader">Buttons</h3>
+  <section class="container">    
     <div class="button-sub-layout margin-bottom">
       <button type="button">
         <span class="material-symbols-outlined icon-large">home</span>
@@ -55,23 +56,46 @@
       </button>
       <button type="button">
         <span class="material-symbols-outlined icon-large">close</span>
-      </button>
-      <button type="button">
-        <span class="material-symbols-outlined icon-large">cached</span>
-      </button>
+      </button>      
       <button type="button">
         <span class="material-symbols-outlined icon-large">settings</span>
+      </button>
+      <button type="button">
+        <span class="material-symbols-outlined icon-large">home</span>
+      </button>
+      <button type="button">
+        <span class="material-symbols-outlined icon-large">menu</span>
+      </button>
+      <button type="button">
+        <span class="material-symbols-outlined icon-large">send</span>
+      </button>
+      <button type="button">
+        <span class="material-symbols-outlined icon-large">refresh</span>
       </button>
     </div>
   </section>
 
-  <section class="container">
-    <h2 class="button-sub-layout">Primary</h2>
+  <section class="container margin-bottom">
+    <h2 class="subheader margin-bottom">Primary</h2>
+    <p class="margin-bottom">Primary buttons intended to use a main brand colour and visually imply it is the main action are user should click on.</p> 
+    <p class="margin-bottom">Terra uses the <code>var(--primary-color)</code>variable by default. But can be overrided with palette to indicate a secondary action etc.</p>
     <button type="button" class="primary margin-bottom">Primary</button>
     
     <button type="button" class="primary full-width">
       <span class="material-symbols-outlined">send</span>Primary full width
     </button>    
+  </section>
+
+  <section class="container">
+    <button type="button">
+      <span class="material-symbols-outlined icon-large">refresh</span>
+    </button>
+    <button type="button">
+      <span class="material-symbols-outlined icon-large">edit</span>
+    </button> 
+    <button type="button">
+      <span class="material-symbols-outlined icon-large destructive">delete</span>
+    </button>     
   </section>
 </body>
 </html>

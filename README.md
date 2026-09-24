@@ -21,9 +21,6 @@
 - Dialog.
 - Popover.
 
-## Docs
-- Navigation has to be on each page in header. Make as webcomponent.
-
 # v1.1
 - Apply apple design to internal border radius
 

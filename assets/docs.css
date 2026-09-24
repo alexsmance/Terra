@@ -13,3 +13,8 @@ header > nav {
   display: flex;
   flex-direction: row;
 }
+
+header > nav > a,
+header > nav > a:visited {
+  color: #333333;
+}
