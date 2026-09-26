@@ -17,39 +17,51 @@
     }
 
     @media (min-width: 600px) {
-      .palette {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: .5rem;
+      .palette {        
+        grid-template-columns: 1fr 1fr;        
       }
     }
 
+    @media (min-width: 900px) {
+      .palette {        
+        grid-template-columns: 1fr 1fr 1fr 1fr;        
+      }
+    }
+    
+    /* @media (min-width: 1200px) {
+      .palette {        
+        grid-template-columns: 1fr 1fr 1fr 1fr;        
+      }
+    } */
+    
     .layout-materials {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 1rem;
+    }
+
+    @media (min-width: 600px) {
+      .layout-materials {        
+        grid-template-columns: 1fr 1fr;        
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .layout-materials {        
+        grid-template-columns: 1fr 1fr 1fr 1fr;        
+      }
     }
 
     .layout-materials > * {
       height: 256px;
     }
 
-    /* .paper {
-      background: var(--white);
-      border-radius: var(--border-radius);
-      box-shadow: var(--box-shadow);
-    }
-
-    .padding {
-      padding: 1rem;
-    } */
   </style>
 </head>
 
 <body>
   <header class="container">
     <h1 class="title margin-bottom">Terra</h1>
-
     <nav>
       <a href="./index.html">Home</a>
       <a href="./buttons.html">Buttons</a>
@@ -60,7 +72,6 @@
       <a href="./terminal.html">Terminal</a>
       <a href="./typography.html">Typography</a>
     </nav>
-
   </header>
 
   <main class="container">
@@ -118,7 +129,7 @@
           <p class="header">Yellow</p>
           <p class="heading">Dafodill</p>
         </div>
-        <p class="text-bold">#ffffe3;</p>
+        <p class="text-bold">#ffffe3</p>
         <p>rgb(255, 255, 229)</p>
         <p>hsl(60, 100%, 95%)</p>
       </div>
@@ -162,10 +173,10 @@
   </section>
   <section class="container">
     <h2 class="subtitle margin-bottom">Materials</h2>
-    <p>Materials are used to emulate natural interfaces that reflect nature. 
-       Paper can be used to isolate context, content or stand out over backgrounds to show clear intent for the user.<br/>
-       Glass can be used to show content behind and provide the same intent that paper does with a more natural blend to the content behind.</p>
-    <div class="layout-materials fjord-bg padding">
+    <p class="margin-bottom">Materials are used to emulate natural interfaces that reflect nature. 
+       Paper can be used to isolate context, content or stand out over backgrounds to show clear intent for the user.</p>
+    <p class="margin-bottom">Glass can be used to show content behind and provide the same intent that paper does with a more natural blend to the content behind.</p>
+    <div class="layout-materials">
       <div class="paper padding">
         <h3 class="header">Paper</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellendus officia eos in odio
