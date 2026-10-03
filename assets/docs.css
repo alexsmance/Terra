@@ -1,3 +1,7 @@
+@view-transition {
+  navigation: auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,4 +21,61 @@ header > nav {
 header > nav > a,
 header > nav > a:visited {
   color: #333333;
+}
+
+@media (prefers-color-scheme: dark) {
+  header > nav > a,
+  header > nav > a:visited {
+    color: white;
+  }
+}
+
+/* Loader */
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #333333;
+  background-color: var(--purple);
+  /* border: 2px solid; */
+  box-sizing: border-box;
+  box-shadow: var(--depth-low);
+  position: relative;
+  transform-origin: left;
+  animation: l2 3s infinite linear;
+}
+
+.loader::before {
+  background: var(--blue);
+}
+
+.loader::after {
+  background: var(--red);
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  margin: auto;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  /* border: 2px solid; */
+  box-shadow: var(--depth-low);
+  box-sizing: content-box;
+  transform-origin: 50% calc(100% - 0.25rem);
+  animation: inherit;
+}
+
+.loader::after {
+  inset: auto 0 calc(100% + 2px);
+  animation-duration: 1.5s;
+  animation-direction: reverse;
+  transform-origin: 50% calc(200% - 2px);
+}
+
+@keyframes l2 {
+  100% { transform: rotate(1turn) }
 }

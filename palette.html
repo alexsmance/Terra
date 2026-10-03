@@ -77,9 +77,10 @@
   <main class="container">
     <section class="margin-vertical">
       <h1 class="title margin-bottom">Palette</h1>
-      <p>Terra comes with a minimal palette that can be altered and used for different purposes. It can be easily altered at 
+      <p class="margin-bottom">Terra comes with a minimal palette that can be altered and used for different purposes. It can be easily altered at 
         <code>:root</code> level and adjusted to your liking. The colours can also be different in dark mode, however by default the same colours are applied
         to both themes.</p>
+      <p class="margin-bottom">After customizing the palette, you can use the colours in your CSS by referencing them with the <code>var(--blue)</code> function for example.</p>
     </section>
   </main>
 
@@ -179,27 +180,24 @@
     <div class="layout-materials">
       <div class="paper padding">
         <h3 class="header">Paper</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellendus officia eos in odio
-          pariatur aliquid, temporibus provident ut itaque distinctio possimus delectus a fuga, nisi illum ea magnam
-          laborum?</p>
+        <p>Paper comes with a low shadow and a clean look, making it ideal for isolating content and providing a subtle elevation.
+          By default in dark mode, paper is a dark grey to provide contrast and a clean look. Referred to as carbon in dark mode while using the same <code>.paper</code> class.</p>
+        </p>
       </div>
       <div class="glass-thin padding shadow-low">
         <h3 class="header">Glass-Thin</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem, quia, error cumque eaque suscipit
-          optio atque repellendus architecto voluptas quisquam. Ad eum culpa, nobis iste harum voluptas voluptatibus
-          voluptates!</p>
+        <p><code>.glass-thin</code> comes with a subtle transparency and but needs a <code>.shadow-low</code>, making it ideal for creating a sense of depth while maintaining readability
+          and emphasises the content behind it.</p>
       </div>
       <div class="glass padding shadow-low">
         <h3 class="header">Glass</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem, quia, error cumque eaque suscipit
-          optio atque repellendus architecto voluptas quisquam. Ad eum culpa, nobis iste harum voluptas voluptatibus
-          voluptates!</p>
+        <p><code>.glass</code> comes with a moderate transparency and a <code>.shadow-low</code>, making it ideal for creating a sense of depth while maintaining readability
+          and emphasises the content behind it and is recommended by default.</p>
       </div>
       <div class="glass-thick padding shadow-low">
         <h3 class="header">Glass-Thick</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem, quia, error cumque eaque suscipit
-          optio atque repellendus architecto voluptas quisquam. Ad eum culpa, nobis iste harum voluptas voluptatibus
-          voluptates!</p>
+        <p><code>.glass-thick</code> comes with a high opacity and a <code>.shadow-low</code>, making it ideal for creating a sense of depth while maintaining readability
+          and focusing on the content rather than what is behind it.</p>
       </div>
     </div>
   </section>

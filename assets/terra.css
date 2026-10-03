@@ -270,6 +270,28 @@ button.primary:active {
   /* transition: filter 0.3s ease-in-out; */
 }
 
+@media (prefers-color-scheme: dark) {
+  button {
+    color: white;
+  }
+
+  .button.primary {
+    color: #333333;
+  }
+  
+  button:hover {
+    background: #666666;
+    color: white;
+  }
+  
+  button.primary:hover {
+    background: var(--primary-color);
+    box-shadow: var(--depth-low);
+    filter: brightness(1.2);
+    transition: filter 0.3s ease-in-out;
+  }
+}
+
 /* Media */
 img, video {
   max-width: 100%;
@@ -440,13 +462,13 @@ input[type=range]::-webkit-slider-runnable-track  {
   background: var(--background-color);
 }
 
-input[type="colour"] {
+input[type="color"] {
   appearance: none;
   width: 2rem;
   height: 2rem;
-  border-radius: .5rem;
+  border: none;
   cursor: pointer;
-  display: grid;
+  box-shadow: var(--box-shadow);
   place-content: center;
 }
 
@@ -639,6 +661,7 @@ ul.list.inset {
 
   li {
     background-color: white;
+    color: #333333;
   }
 
   li:hover {
@@ -719,55 +742,7 @@ table.glass tr {
   color: #333333;
 }
 
-/* Loader */
-.loader {
-  width: 40px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  color: #333333;
-  background-color: var(--purple);
-  /* border: 2px solid; */
-  box-sizing: border-box;
-  box-shadow: var(--depth-low);
-  position: relative;
-  transform-origin: left;
-  animation: l2 3s infinite linear;
-}
 
-.loader::before {
-  background: var(--blue);
-}
-
-.loader::after {
-  background: var(--red);
-}
-
-.loader::before,
-.loader::after {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  margin: auto;
-  width: 50%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  /* border: 2px solid; */
-  box-shadow: var(--depth-low);
-  box-sizing: content-box;
-  transform-origin: 50% calc(100% - 0.25rem);
-  animation: inherit;
-}
-
-.loader::after {
-  inset: auto 0 calc(100% + 2px);
-  animation-duration: 1.5s;
-  animation-direction: reverse;
-  transform-origin: 50% calc(200% - 2px);
-}
-
-@keyframes l2 {
-  100% { transform: rotate(1turn) }
-}
 
 /* Utilities */
 .padding {

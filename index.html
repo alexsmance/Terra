@@ -21,25 +21,20 @@
       align-items: center;
     }
 
-    .layout-typography-grid > div {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      background: var(--yellow);
-      padding: 3rem;
-      font-size: 3rem;
-    }
+    @media (prefers-color-scheme: dark) {
+      nav.glass {
+        color: #333333;
+      }
+      
+      header > h1,
+      header > nav > a,
+      header > nav > a:visited {
+        color: #333333;
+      }
 
-    .layout-typography-grid > div > p {
-      position: absolute;
-      right: .5rem;
-      bottom: .5rem;
-    }
-
-    .palette {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: .5rem;
+      button {
+        color: #333333;
+      }      
     }
 
     @media(min-width: 600px) {
@@ -52,10 +47,6 @@
       .palette {
         grid-template-columns: 1fr;
       }
-    }
-
-    .fjord-bg {
-      background-image: url("/assets/Fjord.png");
     }
 
     .layout-materials {
@@ -100,9 +91,8 @@
   </header>
   
   <main class="container" style="margin-top: 24rem;">
-    <div class="paper padding">      
-      <p class="margin-bottom">Terra is a ui framework with a simple api and low ceremony to create web applications and easily customisable with a minimal api surface and focuses on accessibility.</p>
-      <p></p>
+    <div class="glass padding shadow-low">      
+      <p class="margin-bottom">Terra is a ui framework with a simple api and low ceremony to create web applications and easily customisable with a minimal api surface and focuses on accessibility.</p>      
       <div class="download-actions">        
         <button type="button" class="primary" style="margin-right: 1rem;">
           <span class="material-symbols-outlined">download</span>
