@@ -13,6 +13,13 @@ header > nav {
   margin: 0 1rem;
 }
 
+nav > a {
+  padding: .5rem;
+  text-decoration: none;
+  color: #333333;
+  transition: background-color .2s ease-in-out;
+}
+
 .button-sub-layout {
   display: flex;
   flex-direction: row;
@@ -26,6 +33,11 @@ header > nav > a:visited {
 @media (prefers-color-scheme: dark) {
   header > nav > a,
   header > nav > a:visited {
+    color: white;
+  }
+
+  nav > a,
+  nav > a:visited {
     color: white;
   }
 }
