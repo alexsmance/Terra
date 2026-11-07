@@ -22,10 +22,6 @@
   }
 }
 
-a {
-  color: var(--text-color);
-}
-
 body.terminal {
   background: #333333;
   color: var(--text-color);
@@ -33,6 +29,17 @@ body.terminal {
   padding: 1rem;
 }
 
+.terminal-blur {
+  text-shadow:
+  0 0 2px #00ff66,
+  0 0 5px #00ff66,
+  0 0 10px #00cc55;
+  filter: blur(0.2px);
+}
+
+a {
+  color: var(--text-color);
+}
 .terminal .prompt {
   color: var(--text-color);
   font-weight: 700;
@@ -88,3 +95,4 @@ button:hover {
 progress::-webkit-progress-value {
   background-color: var(--text-color);
 }
+

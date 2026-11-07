@@ -83,7 +83,7 @@
 
   </header>
   
-  <nav class="glass padding shadow-low">
+  <nav class="container glass padding shadow-low">
     <a href="./index.html">Home</a>
     <a href="./buttons.html">Buttons</a>
     <a href="./content.html">Content</a>
@@ -99,10 +99,12 @@
       <p class="margin-bottom">Terra is a ui framework with a simple api and low ceremony to create web applications and easily customisable with a minimal api surface and focuses on accessibility.</p>      
       <div class="download-actions">        
         <button type="button" class="primary" style="margin-right: 1rem;">
-          <span class="material-symbols-outlined">download</span>
-          Download
+          <a href="https://terra.asmance.com/assets/terra.css" download>
+            <span class="material-symbols-outlined">download</span>
+            Download
+          </a>
         </button>
-        <button type="button">
+        <button type="button" onclick="copyToClipboard('https://terra.asmance.com/assets/terra.css')">
           <span class="material-symbols-outlined">content_copy</span>
           CDN
         </button>
